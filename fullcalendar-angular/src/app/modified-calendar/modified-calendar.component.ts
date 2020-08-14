@@ -35,6 +35,7 @@ export class ModifiedCalendarComponent {
   changeMonthView() {
     let calendarApi = this.calendarComponent.getApi();
     calendarApi.changeView('dayGridMonth');
+    this.calendarOptions.titleFormat = {year: 'numeric', month: 'long', day: 'numeric'}
   }
   changeWeekView() {
     let calendarApi = this.calendarComponent.getApi();
