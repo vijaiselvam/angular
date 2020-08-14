@@ -8,6 +8,8 @@ import listPlugin from '@fullcalendar/list';
 import interactionPlugin from '@fullcalendar/interaction';
 
 import { AppComponent } from './app.component';
+import { ModifiedCalendarComponent } from './modified-calendar/modified-calendar.component';
+import { FullcalendarComponent } from './fullcalendar/fullcalendar.component';
 
 FullCalendarModule.registerPlugins([
   dayGridPlugin,
@@ -18,7 +20,9 @@ FullCalendarModule.registerPlugins([
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ModifiedCalendarComponent,
+    FullcalendarComponent
   ],
   imports: [
     BrowserModule,
